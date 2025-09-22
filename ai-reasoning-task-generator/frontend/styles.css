@@ -30,7 +30,28 @@ h1 {
 .subtitle {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    margin-bottom: 20px;
+}
+
+.saved-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.saved-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 .generate-btn {

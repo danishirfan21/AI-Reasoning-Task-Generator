@@ -13,8 +13,12 @@ ai-puzzle-generator/
 │   └── .env.example
 ├── frontend/
 │   ├── index.html
+│   ├── saved.html
 │   ├── styles.css
-│   └── app.js
+│   ├── saved-styles.css
+│   ├── app.js
+│   └── saved.js
+├── .gitignore
 └── README.md
 ```
 
@@ -60,7 +64,20 @@ ai-puzzle-generator/
 1. Click the **"Generate Logic Puzzle"** button
 2. Wait for GPT-4 to generate a new puzzle
 3. Read the question, answer, and explanation
-4. Click again to generate a new puzzle!
+4. **Save your favorite puzzles** using the 💾 Save button
+5. **Download as PDF** using the 📄 Download button
+6. **View all saved puzzles** by clicking "📚 View Saved Puzzles"
+7. Click again to generate a new puzzle!
+
+## ✨ Features
+
+- 🤖 AI-powered puzzle generation using GPT-4
+- 💾 Save puzzles to browser localStorage
+- 📄 Download puzzles as PDF files
+- 📚 View and manage all saved puzzles
+- 🗑️ Delete individual puzzles or clear all at once
+- 📱 Fully responsive design
+- ⚡ Real-time generation with loading states
 
 ## 🔧 API Endpoints
 

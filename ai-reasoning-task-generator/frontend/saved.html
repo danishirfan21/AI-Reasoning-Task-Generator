@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Puzzles - AI Logic Puzzle Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="saved-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Saved Puzzles</h1>
+            <a href="index.html" class="back-btn">← Back to Generator</a>
+        </div>
+        
+        <div class="stats-bar">
+            <p>Total Saved: <span id="totalCount">0</span></p>
+            <button id="clearAllBtn" class="clear-all-btn">🗑️ Clear All</button>
+        </div>
+        
+        <div id="emptyState" class="empty-state">
+            <p class="empty-icon">📭</p>
+            <h2>No Saved Puzzles Yet</h2>
+            <p>Start generating and saving puzzles to build your collection!</p>
+            <a href="index.html" class="generate-link">Generate Your First Puzzle</a>
+        </div>
+        
+        <div id="puzzlesList" class="puzzles-list"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="saved.js"></script>
+</body>
+</html>
