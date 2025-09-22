@@ -23,7 +23,15 @@ async function generatePuzzle() {
 
   // Show loading spinner
   loadingSpinner.classList.remove('hidden');
-  generateBtn.disabled = true;
+
+  // Hide the generate button
+  generateBtn.style.display = 'none';
+
+  // Hide the saved puzzles link
+  const savedLink = document.querySelector('.saved-link');
+  if (savedLink) {
+    savedLink.style.display = 'none';
+  }
 
   try {
     const response = await fetch(API_URL, {
@@ -60,7 +68,13 @@ async function generatePuzzle() {
     errorMessage.textContent = `Failed to generate puzzle: ${error.message}. Make sure the server is running and your API key is configured.`;
     errorMessage.classList.remove('hidden');
   } finally {
-    generateBtn.disabled = false;
+    // Show the generate button again
+    generateBtn.style.display = 'inline-block';
+
+    // Show the saved puzzles link again
+    if (savedLink) {
+      savedLink.style.display = 'inline-block';
+    }
   }
 }
 
