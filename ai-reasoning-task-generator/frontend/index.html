@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Logic Puzzle Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧩 AI Logic Puzzle Generator</h1>
+        <p class="subtitle">Test your reasoning skills with AI-generated puzzles</p>
+        
+        <button id="generateBtn" class="generate-btn">
+            Generate Logic Puzzle
+        </button>
+        
+        <div id="loadingSpinner" class="spinner hidden">
+            <div class="spinner-circle"></div>
+            <p>Generating puzzle...</p>
+        </div>
+        
+        <div id="puzzleCard" class="puzzle-card hidden">
+            <div class="puzzle-section">
+                <h2>❓ Question</h2>
+                <p id="questionText" class="question-text"></p>
+            </div>
+            
+            <div class="puzzle-section">
+                <h2>✅ Answer</h2>
+                <p id="answerText" class="answer-text"></p>
+            </div>
+            
+            <div class="puzzle-section">
+                <h2>💡 Explanation</h2>
+                <p id="explanationText" class="explanation-text"></p>
+            </div>
+        </div>
+        
+        <div id="errorMessage" class="error-message hidden"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
