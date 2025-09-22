@@ -35,11 +35,21 @@
                 <h2>💡 Explanation</h2>
                 <p id="explanationText" class="explanation-text"></p>
             </div>
+            
+            <div class="action-buttons">
+                <button id="savePuzzleBtn" class="action-btn save-btn">
+                    💾 Save Puzzle
+                </button>
+                <button id="downloadPdfBtn" class="action-btn pdf-btn">
+                    📄 Download PDF
+                </button>
+            </div>
         </div>
         
         <div id="errorMessage" class="error-message hidden"></div>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

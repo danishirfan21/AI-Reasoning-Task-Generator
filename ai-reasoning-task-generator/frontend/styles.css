@@ -132,6 +132,49 @@ h1 {
     color: #4a5568;
 }
 
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn {
+    background: #48bb78;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #38a169;
+    transform: translateY(-2px);
+}
+
+.pdf-btn {
+    background: #4299e1;
+    color: white;
+}
+
+.pdf-btn:hover {
+    background: #3182ce;
+    transform: translateY(-2px);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
 .error-message {
     background: #fed7d7;
     color: #c53030;
@@ -151,5 +194,9 @@ h1 {
     
     .puzzle-card {
         padding: 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
     }
 }
